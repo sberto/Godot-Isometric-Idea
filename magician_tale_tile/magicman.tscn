@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3xy4xqkndnik"]
+
+[ext_resource type="ArrayMesh" uid="uid://eoo33t4upjsy" path="res://magician_tale_tile/Dummy_Base_Cube_16121.res" id="1_cfe0f"]
+[ext_resource type="Script" path="res://magician_tale_tile/magicman_movement.gd" id="1_s7xej"]
+[ext_resource type="ArrayMesh" uid="uid://14iw4eiystnw" path="res://magician_tale_tile/Dummy_Base_PrototypePete_body_010.res" id="2_bf5nn"]
+[ext_resource type="ArrayMesh" uid="uid://bs7vsxp8fyxcs" path="res://magician_tale_tile/Dummy_Base_Cube_16119.res" id="3_eqwdh"]
+[ext_resource type="ArrayMesh" uid="uid://cjq121d5mve6f" path="res://magician_tale_tile/Dummy_Base_Cube_16120.res" id="4_k64c4"]
+[ext_resource type="ArrayMesh" uid="uid://c2nlx677pui6v" path="res://magician_tale_tile/Dummy_Base_PrototypePete_head_003.res" id="5_ce5sd"]
+[ext_resource type="ArrayMesh" uid="uid://caipw78y4dgfs" path="res://magician_tale_tile/Dummy_Base_Cylinder_315.res" id="6_hntcx"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ehhxe"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8hta5"]
+radius = 7.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8mxby"]
+radius = 10.0
+
+[node name="Magicman" type="CharacterBody3D"]
+script = ExtResource("1_s7xej")
+
+[node name="MagicmanMesh" type="Node3D" parent="."]
+
+[node name="Dummy_Base" type="MeshInstance3D" parent="MagicmanMesh"]
+mesh = ExtResource("1_cfe0f")
+skeleton = NodePath("")
+
+[node name="Dummy_Body" type="MeshInstance3D" parent="MagicmanMesh/Dummy_Base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+mesh = ExtResource("2_bf5nn")
+skeleton = NodePath("")
+
+[node name="Dummy_ArmLeft" type="MeshInstance3D" parent="MagicmanMesh/Dummy_Base/Dummy_Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.200012, 0.7, 0)
+mesh = ExtResource("3_eqwdh")
+skeleton = NodePath("")
+
+[node name="Dummy_ArmRight" type="MeshInstance3D" parent="MagicmanMesh/Dummy_Base/Dummy_Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200012, 0.7, 0)
+mesh = ExtResource("4_k64c4")
+skeleton = NodePath("")
+
+[node name="Dummy_Head" type="MeshInstance3D" parent="MagicmanMesh/Dummy_Base/Dummy_Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.815874, 0)
+mesh = ExtResource("5_ce5sd")
+skeleton = NodePath("")
+
+[node name="Dummy_Target" type="MeshInstance3D" parent="MagicmanMesh/Dummy_Base/Dummy_Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490235, -0.275074)
+mesh = ExtResource("6_hntcx")
+skeleton = NodePath("")
+
+[node name="MagicManCollision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_ehhxe")
+
+[node name="Smaller" type="Area3D" parent="."]
+
+[node name="Smaller" type="CollisionShape3D" parent="Smaller"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("SphereShape3D_8hta5")
+
+[node name="Larger" type="Area3D" parent="."]
+visible = false
+
+[node name="Larger" type="CollisionShape3D" parent="Larger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("SphereShape3D_8mxby")

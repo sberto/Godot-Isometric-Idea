@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6kky4qa4h7e3"]
+
+[ext_resource type="PackedScene" uid="uid://bmskhiu17yp63" path="res://magician_tale_tile/minimal_block.fbx" id="1_gtb47"]
+
+[node name="minimal_block" instance=ExtResource("1_gtb47")]
+
+[node name="MinimalCube" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

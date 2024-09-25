@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://yg4576pu5dx5"]
+
+[ext_resource type="Texture2D" uid="uid://cbfusfvj8j5b8" path="res://magician_tale_tile/prototypebits_texture.png" id="1_ycsek"]
+
+[resource]
+resource_name = "prototype_texture"
+albedo_texture = ExtResource("1_ycsek")
+roughness = 0.4

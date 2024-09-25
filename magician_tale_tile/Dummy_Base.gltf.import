@@ -1,0 +1,99 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cyhm3s5e0d2pq"
+path="res://.godot/imported/Dummy_Base.gltf-303eb8678d9ab76cb7e2b02ca7d97bf6.scn"
+
+[deps]
+
+source_file="res://magician_tale_tile/Dummy_Base.gltf"
+dest_files=["res://.godot/imported/Dummy_Base.gltf-303eb8678d9ab76cb7e2b02ca7d97bf6.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"prototype_texture": {
+"use_external/enabled": true,
+"use_external/path": "res://magician_tale_tile/prototype_texture.tres"
+}
+},
+"meshes": {
+"Dummy_Base_Cube_16119": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_Cube_16119.res"
+},
+"Dummy_Base_Cube_16120": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_Cube_16120.res"
+},
+"Dummy_Base_Cube_16121": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_Cube_16121.res"
+},
+"Dummy_Base_Cylinder_315": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_Cylinder_315.res"
+},
+"Dummy_Base_PrototypePete_body_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_PrototypePete_body_010.res"
+},
+"Dummy_Base_PrototypePete_head_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://magician_tale_tile/Dummy_Base_PrototypePete_head_003.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
